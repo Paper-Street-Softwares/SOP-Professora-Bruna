@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.profbrunacamargo.com.br/sitemap.xml
