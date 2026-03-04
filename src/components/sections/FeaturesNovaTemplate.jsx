@@ -115,7 +115,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="relative order-2 lg:order-1 w-full m-auto"
+                  className="relative order-2 lg:order-1 w-full m-auto desktop1:w-[80%]"
                 >
                   <div
                     className={`relative overflow-hidden rounded-3xl shadow-2xl  ${image}`}
@@ -181,7 +181,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
               </div>
 
               {/* Conteúdo das features */}
-              <div className="order-1 lg:order-2 space-y-8 w-full desktop1:w-[50%]">
+              <div className="order-1 lg:order-2 space-y-8 w-full desktop1:w-[80%]">
                 <SectionHeaderNovo
                   miniTitle={content.texts.features.miniTag}
                   title={content.texts.features.FirstPart}
