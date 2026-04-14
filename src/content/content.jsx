@@ -902,8 +902,7 @@ const content = {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
       footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
       midSectionName: "Até mais",
-      footerText:
-        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerText: "Agradecemos sua visita! Esperamos que em breve você se torne um dos nossos alunos em busca da sua aprovação e desfrute de todos os benefícios que oferecemos.",
       footerSocialText: "Siga a gente nas redes sociais:",
       footerNavegacaoText: "NAVEGAÇÃO",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
