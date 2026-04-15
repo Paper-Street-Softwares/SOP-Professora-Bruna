@@ -43,6 +43,7 @@ import { AlternatingSection } from "../components/sectionElements/AlternatingSec
 import Parceria from "../components/sections/Parceria";
 import FormNovoTemplate from "../components/sections/FormNovoTemplate";
 import AuthorityAndAlert from "../components/sections/AuthorityAndAlert";
+import MentoriaOAB from "../components/sections/MentoriaOAB";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -84,6 +85,12 @@ export default function Index() {
             </Suspense>
           </AlternatingSection>
 
+          <AlternatingSection index={3} colorMode={colorMode}>
+            <Suspense>
+              <MentoriaOAB />
+            </Suspense>
+          </AlternatingSection>
+
           {/* <AlternatingSection index={3} colorMode={colorMode}>
             <Suspense>
               <Cards colorMode={colorMode} />
@@ -100,7 +107,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={3} colorMode={colorMode}>
+          <AlternatingSection index={4} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
@@ -117,13 +124,13 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -134,7 +141,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={6} colorMode={colorMode}>
+          <AlternatingSection index={7} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -152,7 +159,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={8} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
