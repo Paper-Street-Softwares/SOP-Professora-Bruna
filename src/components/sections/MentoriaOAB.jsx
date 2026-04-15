@@ -103,9 +103,9 @@ const MentoriaOAB = ({ colorMode }) => {
         <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
           Sem cronograma genérico. Sem achismo. Sem perda de tempo.
         </h3>
-        <p className="text-slate-500 uppercase tracking-wide text-sm font-bold mt-4">
+        {/* <p className="text-slate-500 uppercase tracking-wide text-sm font-bold mt-4">
           Opções da mentoria
-        </p>
+        </p> */}
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16 font-secondFont">
