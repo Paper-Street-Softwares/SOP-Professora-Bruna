@@ -60,10 +60,10 @@ function AuthorityAndAlert() {
           subtitle={content.texts.authorityAlert.subtitle}
         />
 
-        <div className="min-h-screen relative">
+        <div className="relative">
           {/* Decorative background elements */}
           <div className="absolute top-0 left-0 w-full h-[500px] bg-primary/5 -skew-y-6 transform origin-top-left -z-10" />
-          <div className="absolute top-40 right-0 w-96 h-96 bg-primaryLight/5 rounded-full -z-10" />
+          <div className="absolute right-0 rounded-full top-40 w-96 h-96 bg-primaryLight/5 -z-10" />
 
           <motion.div
             className="max-w-5xl mx-auto"
@@ -74,19 +74,19 @@ function AuthorityAndAlert() {
             {/* Highlight Banner */}
             <motion.div
               variants={itemVariants}
-              className="mb-10 relative group"
+              className="relative mb-10 group"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-primaryDark to-primaryDark rounded-2xl opacity-25 group-hover:opacity-40 transition-opacity duration-500" />
-              <div className="relative bg-primaryDark border-t border-b border-primaryLight/30 sm:border rounded-2xl overflow-hidden">
+              <div className="absolute inset-0 transition-opacity duration-500 opacity-25 bg-gradient-to-r from-primaryDark to-primaryDark rounded-2xl group-hover:opacity-40" />
+              <div className="relative overflow-hidden border-t border-b bg-primaryDark border-primaryLight/30 sm:border rounded-2xl">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]" />
-                <div className="px-6 py-10 sm:px-12 sm:py-14 text-center relative z-10 flex flex-col items-center justify-center">
-                  <div className="w-16 h-16 bg-primaryLight/10 rounded-full flex items-center justify-center mb-6 ring-1 ring-primaryLight/30">
+                <div className="relative z-10 flex flex-col items-center justify-center px-6 py-10 text-center sm:px-12 sm:py-14">
+                  <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-primaryLight/10 ring-1 ring-primaryLight/30">
                     <Trophy className="w-8 h-8 text-primaryLight" />
                   </div>
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 font-mainFont">
+                  <h3 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl font-mainFont">
                     1º Lugar – TRT Campinas
                   </h3>
-                  <p className="text-xl text-primaryLight/90 font-medium tracking-wide text-corOutrosTextosBranca">
+                  <p className="text-xl font-medium tracking-wide text-primaryLight/90 text-corOutrosTextosBranca">
                     Oficial de Justiça Avaliador Federal
                   </p>
                 </div>
@@ -96,7 +96,7 @@ function AuthorityAndAlert() {
             {/* Top 3 Cards */}
             <motion.div
               variants={itemVariants}
-              className="grid grid-cols-1 md:grid-cols-2 desktop1:grid-cols-3 gap-6 mb-16 font-secondFont"
+              className="grid grid-cols-1 gap-6 mb-16 md:grid-cols-2 desktop1:grid-cols-3 font-secondFont"
             >
               {cardsData.map((card, idx) => (
                 <motion.div
@@ -106,9 +106,9 @@ function AuthorityAndAlert() {
                 >
                   <Card className="h-full border-border/60 bg-white/50 hover:border-primaryLight/30 transition-all duration-300 overflow-hidden relative md:w-[350px] desktop1:w-[300px]">
                     <div className="absolute top-0 right-0 p-4 opacity-10">
-                      <Award className="w-24 h-24 text-primaryDark opacity-50" />
+                      <Award className="w-24 h-24 opacity-50 text-primaryDark" />
                     </div>
-                    <CardHeader className="pb-2 relative z-10">
+                    <CardHeader className="relative z-10 pb-2">
                       <CardTitle className="text-lg desktop1:text-[15px] font-bold text-primaryDark font-secondFont">
                         {card.title}
                       </CardTitle>
@@ -116,7 +116,7 @@ function AuthorityAndAlert() {
                     <CardContent className="relative z-10">
                       <div className="flex items-center gap-2">
                         <Star className="w-5 h-5 text-primaryLight fill-primaryLight" />
-                        <span className="text-2xl desktop1:text-xl font-bold text-primaryDark">
+                        <span className="text-2xl font-bold desktop1:text-xl text-primaryDark">
                           {card.position}
                         </span>
                       </div>
@@ -129,26 +129,26 @@ function AuthorityAndAlert() {
             {/* Detailed List Section */}
             <motion.div
               variants={itemVariants}
-              className=" border-t border-border/60"
+              className="border-t border-border/60"
             >
-              <div className="text-center mb-10">
+              <div className="mb-10 text-center">
                 <p className="text-muted-foreground">
                   Entre 2022 e 2025, minhas aprovações incluem:
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl border border-border/50 p-6 md:p-10 max-w-4xl mx-auto">
+              <div className="max-w-4xl p-6 mx-auto bg-white border rounded-2xl border-border/50 md:p-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12">
                   {fullList.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center gap-4 group p-2 rounded-lg hover:bg-secondary/50 transition-colors"
+                      className="flex items-center gap-4 p-2 transition-colors rounded-lg group hover:bg-secondary/50"
                     >
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center group-hover:bg-primaryDark/10 group-hover:scale-110 transition-all">
-                        <CheckCircle2 className="w-4 h-4 text-primaryDark group-hover:text-primaryDark transition-colors" />
+                      <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 transition-all rounded-full bg-primary/5 group-hover:bg-primaryDark/10 group-hover:scale-110">
+                        <CheckCircle2 className="w-4 h-4 transition-colors text-primaryDark group-hover:text-primaryDark" />
                       </div>
                       <div className="flex flex-col">
-                        <span className="font-bold text-primaryDark group-hover:text-primaryDark transition-colors">
+                        <span className="font-bold transition-colors text-primaryDark group-hover:text-primaryDark">
                           {item.position}
                         </span>
                         <span className="text-sm text-muted-foreground">
